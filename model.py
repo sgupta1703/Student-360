@@ -48,7 +48,7 @@ def predict_gpa(model, study_hours, stress_level):
     return prediction[0]
 
 if __name__ == "__main__":
-    file_path = 'data/student_lifestyle_dataset.csv'
+    file_path = 'student_lifestyle_dataset.csv'
 
     data = load_and_preprocess_data(file_path)
 
