@@ -4,8 +4,7 @@ import matplotlib.pyplot as plt
 import os
 
 def preprocess_data():
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    data_path = os.path.join(BASE_DIR, '..', 'data', 'student_lifestyle_dataset.csv')
+    data_path = "student_lifestyle_dataset.csv"
     data = pd.read_csv(data_path)
     data['Stress_Level'] = data['Stress_Level'].map({'Low': 0, 'Moderate': 1, 'High': 2})
     return data
